@@ -47,6 +47,16 @@
 </head>
 
 <body>
+
+   <?php
+
+        $json = file_get_contents('./assets/data/data.json');
+        $dev_team_data = json_decode($json, true);
+
+        
+    ?>
+
+
     <section class="article-list">
         <div class="container">
             <div class="intro">
@@ -54,8 +64,8 @@
                 <p class="text-center" style="color: var(--gray);">Here We can find First instructions for most of the emergency instructions</p>
             </div>
             
-                <div class="col-sm-6 col-md-4 item" style=""><a href="https://www.youtube.com/watch?app=desktop&amp;v=WDh0LdqCeYg" target="_parent"></a>
-                    <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/WDh0LdqCeYg" style="border-radius: 5px;"></iframe></div>
+                <div class="col-sm-6 col-md-4 item faid" >
+                    <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="" style="border-radius: 5px;"></iframe></div>
                     <h3 class="vid-class" style="color: #441967;">Article Title</h3>
                     <p class="description" style="color: var(--gray-dark);">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
                 </div>
